@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  gcp-sdk:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: gcp-sdk
+    volumes:
+      - ${HOME}/.config/gcloud:/root/.config/gcloud
+      - ./src:/app        
+    tty: true
+    working_dir: /app
+    # コンテナが起動したら開始するコマンドを指定できます（任意）
+    command: bash
