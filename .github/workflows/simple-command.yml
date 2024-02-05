@@ -1,0 +1,16 @@
+name: Run Shell Commands
+
+on: workflow_dispatch
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Echo a Message
+        run: echo "Hello, GitHub Actions!"
+
+      - name: Show Current Date and Time
+        run: date
