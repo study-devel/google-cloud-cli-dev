@@ -134,6 +134,11 @@ Cloud Runは、完全にマネージドされたプラットフォームで、�
 
 ## Git Action
 
+### ユーザーの権限が必要
+
+「Personal access tokens」に進んで、新しいトークンを生成するか、既存のトークンを編集します。
+「Select scopes」セクションで、workflowスコープのチェックボックス
+
 on: 、ワークフローをトリガーするイベントを指定します
 
  - workflow_dispatch: GUIから手動でワークフローをトリガーしたい場合
