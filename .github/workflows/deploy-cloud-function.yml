@@ -23,7 +23,7 @@ jobs:
 
       - name: Deploy to Cloud Functions
         run: |
-          gcloud functions deploy hello_world \
+          gcloud functions deploy hello_world_deploy \
             --project=${{ secrets.GCP_PROJECT_ID }} \
             --runtime=python39 \
             --trigger-http \
