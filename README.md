@@ -82,6 +82,9 @@ RUNTIME: 使用するランタイムの指定（例: nodejs10, python3.7 など�
 --trigger-http: HTTP トリガーを使用して関数を呼び出すことを指定します。
 --allow-unauthenticated: 認証されていない（匿名の）リクエストによる関数の呼び出しを許可します。
 
+```bash
+gcloud functions deploy hello_world     --runtime python39     --trigger-http     --allow-unauthenticated     --region=asia-northeast1 
+```
 
 gcloud services enable cloudfunctions.googleapis.com --project=gcp-devel-project
 
@@ -106,3 +109,12 @@ gcloud functions deploy hello_world \
     --region=asia-northeast1 \
     --source=./path/to/your/function/folder
 ```
+
+---
+
+## サービス
+
+### Cloud Run
+
+Cloud Runは、完全にマネージドされたプラットフォームで、ステートレスコンテナをデプロイし、実行することができます。イベント駆動型アプリケーションやWebサービスに適しており、使用した分だけの課金が特徴です。コードをコンテナ化し、Cloud Runにデプロイすることで、自動的にスケーリングし、HTTPSエンドポイントを通じてアクセスできます。
+
