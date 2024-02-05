@@ -19,7 +19,7 @@ jobs:
           credentials_json: ${{ secrets.GCP_SA_KEY }}
 
       - name: Setup Google Cloud SDK
-        uses: google-github-actions/setup-gcloud@latest
+        uses: google-github-actions/setup-gcloud@v2.1.0
 
       - name: Deploy to Cloud Functions
         run: |
