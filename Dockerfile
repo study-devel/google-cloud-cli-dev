@@ -20,3 +20,4 @@ COPY . /app
 
 # エントリポイントを設定（任意）
 # ENTRYPOINT ["/bin/bash"]
+

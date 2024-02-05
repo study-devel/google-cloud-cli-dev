@@ -1,5 +1,19 @@
+# google-cloud-cli-dev
 
+Google Cloud 学習用
+
+## Repository
+
+- https://github.com/study-devel/google-cloud-cli-dev
+- https://appj.pglikers.com/gitbucket/git/develop/google-cloud-cli-dev.git
+
+
+## Build
+
+
+```bash
 docker exec -it gcp-sdk bash
+```
 
 
 ```bash
