@@ -165,3 +165,10 @@ GitHubリポジトリのコードをチェックアウト（つまり、ワー�
 このアクションを使用することで、
 ワークフローがリポジトリ内のコードにアクセスし、ビルド、テスト、デプロイメントなどのさまざまな操作を実行できるようになります。
 
+### 公開する場合
+
+gcloud functions add-iam-policy-binding YOUR_FUNCTION_NAME \
+  --member=allUsers \
+  --role=roles/cloudfunctions.invoker \
+  --project=YOUR_PROJECT_ID \
+  --region=YOUR_FUNCTION_REGION
