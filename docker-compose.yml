@@ -8,7 +8,7 @@ services:
     container_name: gcp-sdk
     volumes:
       - ${HOME}/.config/gcloud:/root/.config/gcloud
-      - ./src:/app        
+      - ./:/app        
     tty: true
     working_dir: /app
     # コンテナが起動したら開始するコマンドを指定できます（任意）

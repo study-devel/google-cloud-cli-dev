@@ -1,5 +1,10 @@
 #!/bin/bash
 
+GOOGLE_APPLICATION_CREDENTIALS="./gcp_auth.json"
+
+# 認証処理
+gcloud auth activate-service-account --key-file=$GOOGLE_APPLICATION_CREDENTIALS
+
 # Google Cloud のプロジェクトIDを設定
 PROJECT_ID="gcp-devel-project"
 
