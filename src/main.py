@@ -1,3 +1,5 @@
+import jsonschema
+
 def hello_world(request):
     """
     HTTP Cloud Function.
